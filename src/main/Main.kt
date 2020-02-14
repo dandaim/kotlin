@@ -1,9 +1,13 @@
 package main
 
-import main.basics.printListIndexesAndElements
-
 fun main() {
-    val randomList = listOf("1", "2", "3")
+    println(doubleMap(listOf(1,2,3,4,5,6)))
+}
 
-    printListIndexesAndElements(randomList)
+fun double(n: Int): Int {
+    return n * 2
+}
+
+fun doubleMap(numbers: List<Int>): List<Int> {
+    return numbers.map{ double(it)}
 }
